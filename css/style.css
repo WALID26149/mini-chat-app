@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    /* background-document */
+    background-color: #d695ce;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    /* center the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+/* style the scrolle bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(46, 83, 120, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1.5px solid #ccc;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border: 1.5px solid #ccc;
+}
+ 
+.container{
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 10px;
+    margin: 7% 0;
+    height: 520px;
+    width: 320px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* style the header section */
+.header{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+.header-img{
+    margin: 10px 10px 10px 15px;
+    height: 40px;
+}
+.user-name{
+    display: inline-block;
+}
+.user-name h1{
+    color: #222;
+    margin: 0;
+    font-size: 17px;
+}
+.user-name p{
+    margin: 0;
+    color: grey;
+}
+.icons{
+    position: relative;
+    right: -75px;
+}
+.lni-phone::before {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.lni-headphone::before {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+/* style body section */
+.chat{
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.heading, .heading2{
+    background-color: #d695ce;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 20px 10px;
+    transition: 0.3s;
+}
+.heading2{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #22A39F;
+}
+/* style the footer section */
+.message-text{
+    text-align: center;
+    margin: 10px;   
+}
+.message-text input{
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 0 12px 10px;
+    width: 74%;
+    color: grey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.message-text input:focus{
+    outline: none;
+}
+.send-btn{
+    padding: 12px 15px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #d695ce;
+    color: aliceblue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
