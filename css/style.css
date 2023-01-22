@@ -85,6 +85,7 @@ body::-webkit-scrollbar-thumb {
 .chat{
     height: 422px;
     overflow: scroll;
+    /* overflow-y: auto; */
     overflow-x: hidden;
     scroll-behavior: smooth;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -150,6 +151,11 @@ body::-webkit-scrollbar-thumb {
     color: aliceblue;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transition:0.2s;
+}
+.send-btn:hover{
+    transition:0.2s;
+    transform:scale(0.9)
 }
 /* copy right p */
 .copy-right{
@@ -168,5 +174,10 @@ body::-webkit-scrollbar-thumb {
     }
     .message-text input{
         width: 71%;
+    }
+  }
+  @media (max-width:600px) {
+    .icons{
+        right: -18%;
     }
   }

@@ -7,6 +7,8 @@
     <title>chatApp</title>
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- favicon likn -->
+    <link rel="shortcut icon" href="chatbot.png" type="image/x-icon">
     <!-- icons link -->
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
@@ -27,7 +29,7 @@
             </div>
         </header>
         <!-- body of chatApp -->
-        <div class="chat">
+        <div class="chat" id="chat">
             <div class="robot">
                 <img class="robot-img" src="image/robot.png" alt="img">
                 <h3>Robot</h2>
@@ -36,8 +38,10 @@
         </div>
         <!-- message text -->
         <footer class="message-text">
-                <input id="my-message"type="text" value="" placeholder="Your message">
-                <button class="send-btn">Send</button>
+                <form action="">
+                    <input id="my-message"type="text" value="" placeholder="Your message">
+                    <button class="send-btn" type="submit">Send</button>
+                </form>
         </footer>
         <div class="copy-right">
             <script type="text/javascript">

@@ -1,7 +1,17 @@
 const sendBtn = document.querySelector('.send-btn');
 const chat = document.querySelector('.chat');
 
-sendBtn.addEventListener('click', () =>{
+chat.addEventListener('click', (e) => {
+    const s1coords = chat.getBoundingClientRect();
+        chat.scrollTo({
+          left: s1coords.left + window.pageXOffset,
+          top: s1coords.bottom + window.pageYOffset,
+          behavior: 'smooth',
+        });
+});
+
+sendBtn.addEventListener('click', (event) =>{
+    event.preventDefault();
     for (let i = 0; i < 1; i++) {
         const input = document.getElementById('my-message').value;
         const div = document.createElement("div");
@@ -16,12 +26,21 @@ sendBtn.addEventListener('click', () =>{
         chat.appendChild(div).appendChild(h3).classList.add('robot2');
         chat.appendChild(div).appendChild(img).classList.add('robot2-img')
         chat.appendChild(h2).classList.add('heading2');
+        if(input.value = " ") {
+            h2.style.display = "none";
+            div.style.display = "none"
+        } 
+         if(input) {
+            div.style.display = "flex";
+            h2.style.display = "flex";
+        }
     }
 });
 
 
 // keypress enter event
 window.addEventListener("keypress", (event) => {
+    event.preventDefault();
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Enter") {
       for (let i = 0; i < 1; i++) {
@@ -38,6 +57,14 @@ window.addEventListener("keypress", (event) => {
         chat.appendChild(div).appendChild(h3).classList.add('robot2');
         chat.appendChild(div).appendChild(img).classList.add('robot2-img')
         chat.appendChild(h2).classList.add('heading2');
+        if(input.value = " ") {
+            h2.style.display = "none";
+            div.style.display = "none"
+        } 
+         if(input) {
+            div.style.display = "flex";
+            h2.style.display = "flex";
+        }
     }
     }
   });
@@ -57,7 +84,7 @@ window.addEventListener("keypress", (event) => {
         const img = document.createElement("img");
         div.style.display = "flex";
         div.style.alignItems = "center"
-        h3.innerText = "uRobot";
+        h3.innerText = "Robot";
         img.src="image/robot.png";
         chat.appendChild(div).appendChild(img).classList.add('robot-img');
         chat.appendChild(div).appendChild(h3).classList.add('robot');
@@ -68,7 +95,7 @@ window.addEventListener("keypress", (event) => {
     awaitTimeout(35000).then(() => {
         for (let i = 0; i < 1; i++) {
             const randomMessage = [
-                "How old are you",
+                "Nice, how old are you",
             ];
             const h2 = document.createElement("h2");
             const div = document.createElement("div");
@@ -87,7 +114,7 @@ window.addEventListener("keypress", (event) => {
     awaitTimeout(50000).then(() => {
         for (let i = 0; i < 1; i++) {
             const randomMessage = [
-                "were do you live",
+                "So were do you live",
             ];
             const h2 = document.createElement("h2");
             const div = document.createElement("div");
@@ -125,7 +152,7 @@ window.addEventListener("keypress", (event) => {
     awaitTimeout(80000).then(() => {
         for (let i = 0; i < 1; i++) {
             const randomMessage = [
-                "Nice, beautiful day",
+                "Nice beautiful day",
             ];
             const h2 = document.createElement("h2");
             const div = document.createElement("div");
@@ -217,6 +244,3 @@ window.addEventListener("keypress", (event) => {
             chat.appendChild(h2).classList.add('heading');
      }
     })
-
-    
-    
