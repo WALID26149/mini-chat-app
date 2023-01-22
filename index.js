@@ -11,7 +11,7 @@ chat.addEventListener('click', (e) => {
 });
 
 sendBtn.addEventListener('click', (event) =>{
-    event.preventDefault();
+    // event.preventDefault();
     for (let i = 0; i < 1; i++) {
         const input = document.getElementById('my-message').value;
         const div = document.createElement("div");
@@ -40,7 +40,7 @@ sendBtn.addEventListener('click', (event) =>{
 
 // keypress enter event
 window.addEventListener("keypress", (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Enter") {
       for (let i = 0; i < 1; i++) {
