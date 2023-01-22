@@ -173,11 +173,11 @@ body::-webkit-scrollbar-thumb {
         width: 75%;
     }
     .message-text input{
-        width: 71%;
+        width: 69%;
     }
   }
   @media (max-width:600px) {
     .icons{
-        right: -18%;
+        right: -15%;
     }
   }
