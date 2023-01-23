@@ -178,6 +178,6 @@ body::-webkit-scrollbar-thumb {
   }
   @media (max-width:600px) {
     .icons{
-        right: -15%;
+        right: -14%;
     }
   }

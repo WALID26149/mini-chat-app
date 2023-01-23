@@ -1,5 +1,7 @@
 const sendBtn = document.querySelector('.send-btn');
 const chat = document.querySelector('.chat');
+const userName = document.querySelector('h1');
+userName.innerText = prompt();
 
 chat.addEventListener('click', (e) => {
     const s1coords = chat.getBoundingClientRect();
